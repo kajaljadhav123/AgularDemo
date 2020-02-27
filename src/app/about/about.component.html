@@ -1,0 +1,180 @@
+<section id="page-title" style="background: #042355;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3>About Us</h3>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="bread">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.php">Home</a>
+							</li>
+							<li class="breadcrumb-item"><a href="about-us.php">About Us</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="courses" style="padding-top: 30px;">
+	<div class="content-box-about">
+		<div class="content-title" data-wow-duration="1s" data-wow-delay=".5s">
+			<h3 style="color: #252323;text-align: center;padding-bottom: 30px;">Why Us</h3>
+			<div class="content-titel-underline"></div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="about-desc">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="about-img">
+						<img src="./assets/about.png" class="img-responsive" alt="About Us">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<style>
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+  
+<section id="courses" style="padding-top: 30px;">
+	<div class="table-responsive">
+		<table class="table">
+		<thead>
+			<tr>
+			<th>User ID</th>
+			<th>ID</th>
+			<th>Title</th>
+			<th>Body</th>
+			<th>Update</th>
+			<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let data of serverdata">
+			<td>{{data.userId}}</td>
+			<td>{{data.id}}</td>
+			<td>{{data.title}}</td>
+			<td>{{data.body}}</td>
+			<td><button (click)="updatepost(data.id)">Update</button></td>
+			<td><button (click)="deletepost(data.id)">Delete</button></td>
+			</tr>
+		</tbody>
+		</table>
+	</div><br><br>
+	<div *ngIf="isError">
+		Data is not avaliable
+	</div>
+</section>
+
+<section class="footer site-main">
+	<div id="particles-js" class="site-bg">
+		<div class="site-bg-img"></div>
+		<div class="site-bg-video"></div>
+		<div class="site-bg-overlay"></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>About Us</h4>
+				</div>
+				<div class="footer-desc">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the
+					    Lorem Ipsum has been the industry's standard dummy text ever since the
+					</p>
+				
+				
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-md-push-1 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>USEFUL LINKS</h4>
+				</div>
+				<div class="footer-link">
+					<ul>
+						<li style="list-style: none;">
+							<span class="text-style"><a routerLink="home">Home</a></span>
+						</li>
+						<li style="list-style: none;">
+							<span class="text-style"><a routerLink="about">About Us</a></span>
+						</li>
+						<li style="list-style: none;"> 
+							<span class="text-style"><a routerLink="login">Login</a></span>
+						</li>
+						<li style="list-style: none;">	
+							<span class="text-style"><a routerLink="register">Registertion</a></span>
+						</li>
+						<li style="list-style: none;">	
+							<span class="text-style"><a routerLink="contact">Contact Us</a></span>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>Contact Us</h4>
+				</div>
+				<div class="footer-desc">
+				   <p>Address: Chandan Nagar, Kharadi, Pune - 411 014.</p>
+				   <p>Phone Number: +91 7972210705</p>
+				   <p>Email Id: info@example.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="bottom-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="copyright-text">
+					<p style="color:#ffffff">@2018 Angular Design - Designe by<a href="" target="_blank" rel="nofollow"> Yess Infotech</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="social-icon">
+					<ul class="list-inline">
+						<li>	<a href="#" class="textwidget fb"><i class="fa fa-facebook" aria-hidden="true"></i>
+	</a>
+						</li>
+						<li>	<a href="#" class="textwidget ld"><i class="fa fa-linkedin" aria-hidden="true"></i>
+	</a>
+						</li>
+						<li>	<a href="#" class="textwidget gp"><i class="fa fa-google-plus" aria-hidden="true"></i>
+	</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

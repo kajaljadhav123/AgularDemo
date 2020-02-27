@@ -1,0 +1,97 @@
+#slider{
+    padding-top:0px;
+    }
+    
+    .slider-bg {  
+    background: url(https://learnpriceactiontrading.com/images/bg1.png) no-repeat top center scroll;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    }
+    /*
+    .slider-padding{
+    padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    */
+    
+    .text-color h1{
+        font-size: 30px;
+    }
+    .slider-padding{
+    padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    @media only screen and ( max-width: 768px )  {
+    .slider-padding{
+    padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .text-color h1{
+    font-size:16px;
+    }
+    .text-color h4{
+    font-size:14px;
+    }
+    .text-color p{
+    color:#ffffff;
+    }
+    .text-color{padding-top:0px !important;}
+    .slider-img-center {
+        padding-top: 35px;
+    }
+    .btn-general {
+    padding: 3px 10px 3px 10px !important;
+    }
+    }
+    .slider-img-center{
+    margin:0 auto;
+    }
+    .text-color{padding-top:35px;}
+    .text-color h1,h4{color:#ffffff;}
+    #slider p{color:#ffffff;}
+    .main-text p{color: #41464b !important;}
+    
+    /* Hide Slider Navigation */
+    .carousel .carousel-control { visibility: hidden; }
+    .carousel:hover .carousel-control { visibility: visible; }
+     .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+        left: 37%;
+    }
+    .btn-dark {
+        color: #fff;
+        background-color: #FF1493;
+        border-color:#FF1493;
+        padding: 12px 26px 12px 26px;
+    }
+
+    .main-text p {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #042355;
+    }
+    .footer p, h4, a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .text-style {
+        padding-left: 20px;
+        color: #ffffff;
+    }
+
+    #bottom-bar {
+        background-color: #031d48;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }

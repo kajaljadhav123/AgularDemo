@@ -1,0 +1,136 @@
+<section id="page-title" style="background: #042355;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<h3>Login</h3>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="bread">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="">Home</a>
+							</li>
+							<li class="breadcrumb-item"><a href="">Login</a>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+    <div class="row"> 
+        <div class="col-md-6">
+            <h3 style="padding-top:40px;padding-bottom:20px;text-align: center;color: black;">Login Form</h3>
+            <form  #loginform="ngForm" (ngSubmit)="loginform.form.valid && templogin() ">
+                <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" name="username" class="form-control" [(ngModel)]="user.username" #username="ngModel" required [ngClass]="{'isinvalid':loginform.submitted && username.invalid}"/>
+                    <div *ngIf="loginform.submitted && username.invalid">User Name is required !</div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" [(ngModel)]="user.password" #password="ngModel" name="password"
+                    required [ngClass]="{'isinvalid':loginform.submitted && password.invalid}"/>
+                    <div *ngIf="loginform.submitted && password.invalid">Password is required !</div>
+                </div>
+                <div class="form-group" style="padding-bottom: 10px;padding-top:20px;">
+                    <button class="btn btn-primary" [disabled]="!loginform.form.valid" style="background-color: blueviolet;color:#fff;padding-top: 10px;padding-bottom: 10px;">Login</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6" style="text-align: center;">
+           <img src="./assets/login.jpg">
+        </div>
+      
+    </div>
+</div>
+
+
+  
+<section class="footer site-main">
+	<div id="particles-js" class="site-bg">
+		<div class="site-bg-img"></div>
+		<div class="site-bg-video"></div>
+		<div class="site-bg-overlay"></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>About Us</h4>
+				</div>
+				<div class="footer-desc">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the
+					    Lorem Ipsum has been the industry's standard dummy text ever since the
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-md-push-1 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>USEFUL LINKS</h4>
+				</div>
+				<div class="footer-link">
+					<ul>
+						<li style="list-style: none;">
+							<span class="text-style"><a routerLink="home">Home</a></span>
+						</li>
+						<li style="list-style: none;">
+							<span class="text-style"><a routerLink="about">About Us</a></span>
+						</li>
+						<li style="list-style: none;"> 
+							<span class="text-style"><a routerLink="login">Login</a></span>
+						</li>
+						<li style="list-style: none;">	
+							<span class="text-style"><a routerLink="register">Registertion</a></span>
+						</li>
+						<li style="list-style: none;">	
+							<span class="text-style"><a routerLink="contact">Contact Us</a></span>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="footer-title">
+					<h4>Contact Us</h4>
+				</div>
+				<div class="footer-desc">
+				   <p>Address: Chandan Nagar, Kharadi, Pune - 411 014.</p>
+				   <p>Phone Number: +91 7972210705</p>
+				   <p>Email Id: info@example.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="bottom-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="copyright-text">
+					<p style="color:#ffffff">@2018 Angular Design - Designe by<a href="" target="_blank" rel="nofollow"> Yess Infotech</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="social-icon">
+					<ul class="list-inline">
+						<li>	<a href="#" class="textwidget fb"><i class="fa fa-facebook" aria-hidden="true"></i>
+	</a>
+						</li>
+						<li>	<a href="#" class="textwidget ld"><i class="fa fa-linkedin" aria-hidden="true"></i>
+	</a>
+						</li>
+						<li>	<a href="#" class="textwidget gp"><i class="fa fa-google-plus" aria-hidden="true"></i>
+	</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
